@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-wc": "vue-cli-service build --target wc --name flip-wc 'src/App.vue' --inline-vue"
+    "build-wc": "vue-cli-service build --target wc --name flip-wc 'src/App.vue' --inline-vue",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "core-js": "^3.6.5",
