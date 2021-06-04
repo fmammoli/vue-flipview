@@ -6,15 +6,7 @@
   >
     <Flipbook
       class="flipbook"
-      :pages="[
-        null,
-        '/1.jpeg',
-        '/2.jpeg',
-        '/3.jpeg',
-        '/4.jpeg',
-        '/5.jpeg',
-        '/6.jpeg',
-      ]"
+      :pages="pages"
       :pagesHiRes="pagesHiRes"
       :startPage="pageNum"
       v-slot="flipbook"
@@ -62,19 +54,19 @@ import RightIcon from "vue-material-design-icons/ChevronRightCircle";
 import PlusIcon from "vue-material-design-icons/PlusCircle";
 import MinusIcon from "vue-material-design-icons/MinusCircle";
 import Flipbook from "flipbook-vue";
-// import img1 from "./assets/1.jpeg";
-// import img2 from "./assets/2.jpeg";
-// import img3 from "./assets/3.jpeg";
-// import img4 from "./assets/4.jpeg";
-// import img5 from "./assets/5.jpeg";
-// import img6 from "./assets/6.jpeg";
+import img1 from "./assets/1.jpeg";
+import img2 from "./assets/2.jpeg";
+import img3 from "./assets/3.jpeg";
+import img4 from "./assets/4.jpeg";
+import img5 from "./assets/5.jpeg";
+import img6 from "./assets/6.jpeg";
 
-// import img1hi from "./assets/1hi.jpeg";
-// import img2hi from "./assets/2hi.jpeg";
-// import img3hi from "./assets/3hi.jpeg";
-// import img4hi from "./assets/4hi.jpeg";
-// import img5hi from "./assets/5hi.jpeg";
-// import img6hi from "./assets/6hi.jpeg";
+import img1hi from "./assets/1hi.jpeg";
+import img2hi from "./assets/2hi.jpeg";
+import img3hi from "./assets/3hi.jpeg";
+import img4hi from "./assets/4hi.jpeg";
+import img5hi from "./assets/5hi.jpeg";
+import img6hi from "./assets/6hi.jpeg";
 
 export default {
   name: "app",
@@ -144,8 +136,8 @@ export default {
       //   process.env.BASE_URL + "6hi.jpeg",
       // ];
     }, 1);
-    // this.pages = [null, img1, img2, img3, img4, img5, img6];
-    // this.pagesHiRes = [null, img1hi, img2hi, img3hi, img4hi, img5hi, img6hi];
+    this.pages = [null, img1, img2, img3, img4, img5, img6];
+    this.pagesHiRes = [null, img1hi, img2hi, img3hi, img4hi, img5hi, img6hi];
     window.addEventListener("hashchange", this.setPageFromHash);
     this.setPageFromHash();
   },

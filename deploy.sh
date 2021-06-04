@@ -10,6 +10,6 @@ git add -A
 
 git commit -m "deploy"
 
-git push -f git@github.com:fmammoli/vue-flipview.git main:gh-pages
+git push ori HEAD:gh-pages
 
 cd -
