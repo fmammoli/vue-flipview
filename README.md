@@ -1,5 +1,8 @@
 # flip-comp
 
+Done using:
+https://github.com/ts1/flipbook-vue
+
 ## Project setup
 ```
 yarn install
